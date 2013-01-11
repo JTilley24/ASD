@@ -59,7 +59,7 @@ $("#additem").on("pageinit", function(){
 	//Replace placeholder for texts
 	$("input:text").each(
 		function(){
-			$(this).click(
+			$(this).focus(
 				function(){
 					$(this)
 					.val(" ")
@@ -81,7 +81,7 @@ $("#additem").on("pageinit", function(){
 	//Replace placeholder for comments
 	$("#comments").each(
 		function(){
-			$(this).click(
+			$(this).focus(
 				function(){
 					$(this).val(" ")
 					.css("color",("#000"));
