@@ -1,0 +1,80 @@
+/*
+Justin Tilley
+Project 1
+MIU Term 1211
+*/
+
+
+
+fieldset ul{
+	list-style: none;
+}
+
+#radios{
+	list-style-type: none;
+}
+
+#exp{
+	color: gray;
+}
+
+#searchbox{
+	padding: 10px;
+}
+
+#search{
+	font-size: 12px;
+    color: #999;
+    padding: 4px 10px 5px 30px;
+    width: 140px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+#searchsubmit{
+	border: 1px solid #00748f;
+	border-radius: 10px;
+	height: 28px;
+	width: 65px;
+}
+
+label.error{
+	display: block;
+	margin: 10px;
+	color: red;
+}
+
+#req{
+	color: red;
+}
+
+#pastlist li p{
+	text-align: right;
+	color: grey;
+}
+
+#pastlist li h4{
+	font-size: 12px;
+}
+
+#additem section p{
+	font-size: 9px;
+	color: grey;
+}
+
+#region p{
+	display: inline;
+	margin-left: 10px;
+
+}
+
+#year{
+	display: inline;
+	width: 20%;
+}
+
+#brand{
+	height: 35px;
+	float: left;
+	margin: 0px;
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<items>
+		<vehicle>
+			<region>Domestic</region>
+			<make>Chevy</make>
+			<model>Silverado</model>
+			<year>2003</year>
+			<group>Body</group>
+			<date>2013-3-15</date>
+			<comments>front passenger fender</comments>
+		</vehicle>
+		<vehicle>
+			<region>Asian</region>
+			<make>Subaru</make>
+			<model>Impreza</model>
+			<year>1996</year>
+			<group>Body</group>
+			<date>2013-4-1</date>
+			<comments>rear driver quarter</comments>
+		</vehicle>
+		<vehicle>
+			<region>European</region>
+			<make>BMW</make>
+			<model>z4</model>
+			<year>1998</year>
+			<group>Chassis</group>
+			<date>2013-4-13</date>
+			<comments>steering rack</comments>
+		</vehicle>
+		<vehicle>
+			<region>Domestic</region>
+			<make>Chrysler</make>
+			<model>Town and Country</model>
+			<year>2000</year>
+			<group>Drivetrain</group>
+			<date>2013-4-25</date>
+			<comments>transmission filter</comments>
+		</vehicle>
+		<vehicle>
+			<region>Asian</region>
+			<make>Hyundai</make>
+			<model>Sonata</model>
+			<year>2006</year>
+			<group>Engine</group>
+			<date>2013-5-1</date>
+			<comments>spark plugs</comments>
+		</vehicle>
+	</items>
