@@ -48,7 +48,7 @@
 				<ul>
 					<li><a href="#home" data-icon="home">Home</a></li>
 					<li><a href="#about" data-icon="info">About</a></li>
-					<li><a href="#past" data-icon="check">Past Repairs</a></li>
+					<li><a href="#repairs" data-icon="check">Repairs</a></li>
 					<li><a href="#additem" data-icon="gear">Add Repair</a></li>
 				</ul>
 			</section>	
@@ -73,43 +73,38 @@
 				<ul>
 					<li><a href="#home" data-icon="home">Home</a></li>
 					<li><a href="#about" data-icon="info">About</a></li>
-					<li><a href="#past" data-icon="check">Past Repairs</a></li>
+					<li><a href="#repairs" data-icon="check">Repairs</a></li>
 					<li><a href="#additem" data-icon="gear">Add Repair</a></li>
 				</ul>
 			</section>
 		</footer>
 	</div>
 	
-	<div data-role="page" id="past" data-add-back-btn="true">
+	<div data-role="page" id="repairs" data-add-back-btn="true">
 		<header data-role="header" data-position="fixed">
-			<h1><img src="images/brand.png" id="brand">Past Repairs<h1>
+			<h1><img src="images/brand.png" id="brand">Repairs<h1>
 		</header>
 		<section data-role="content">
-			<ul data-role="listview" data-filter="true" id="pastlist">
-				<li><img src="images/engine.png" class="ui-li-thumb"><p>2012-11-4</p>
-					<h3>1965 Ford Mustang<h3>
-					<h4>Replaced Carburator</h4>
-				</li>
-				<li><img src="images/chassis.jpg" class="ui-li-thumb"><p>2012-11-2</p>
-					<h3>1987 Porsche 944<h3>
-					<h4>Rear Wheel Seals</h4>
-				</li>
-				<li><img src="images/engine.png" class="ui-li-thumb"><p>2012-10-29</p>
-					<h3>2011 Dodge Challenger<h3>
-					<h4>Aftermarket Headers</h4>
-				</li>
-				<li><img src="images/interior.jpg" class="ui-li-thumb"><p>2012-10-14</p>
-					<h3>1998 Land Rover Discovery<h3>
-					<h4>Sound System</h4>
-				</li>
+			<ul data-role="listview" id="repairlist">
+			
 			</ul>
+			<p><a href="#" data-role="button" id="storage">Get Repairs</a></p>
+			<p><a href="#" data-role="button" id="clear">Clear Repairs</a></p>
+			<ul class="ui-grid-b">
+				<li class="ui-block-a"><a href="#" data-role="button" id="jsonButton">JSON data</a></li>
+				<li class="ui-block-b"><a href="#" data-role="button" id="xmlButton">XML data</a></li>
+				<li class="ui-block-c"><a href="#" data-role="button" id="csvButton">CSV data</a></li>
+			</ul>
+		</section>
+		<section data-role="content" id="datalist">
+		
 		</section>
 		<footer data-role="footer" data-position="fixed">
 			<section data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home">Home</a></li>
 					<li><a href="#about" data-icon="info">About</a></li>
-					<li><a href="#past" data-icon="check">Past Repairs</a></li>
+					<li><a href="#repairs" data-icon="check">Repairs</a></li>
 					<li><a href="#additem" data-icon="gear">Add Repair</a></li>
 				</ul>
 			</section>
@@ -176,7 +171,7 @@
 				<ul>
 					<li><a href="#home" data-icon="home">Home</a></li>
 					<li><a href="#about" data-icon="info">About</a></li>
-					<li><a href="#past" data-icon="check">Past Repairs</a></li>
+					<li><a href="#repairs" data-icon="check">Repairs</a></li>
 					<li><a href="#additem" data-icon="gear">Add Repair</a></li>					
 				</ul>
 			</section>
@@ -229,7 +224,7 @@
 				<ul>
 					<li><a href="#home" data-icon="home">Home</a></li>
 					<li><a href="#about" data-icon="info">About</a></li>
-					<li><a href="#past" data-icon="check">Past Repairs</a></li>
+					<li><a href="#repairs" data-icon="check">Repairs</a></li>
 					<li><a href="#additem" data-icon="gear">Add Repair</a></li>
 				</ul>
 			</section>
@@ -282,7 +277,7 @@
 				<ul>
 					<li><a href="#home" data-icon="home">Home</a></li>
 					<li><a href="#about" data-icon="info">About</a></li>
-					<li><a href="#past" data-icon="check">Past Repairs</a></li>
+					<li><a href="#repairs" data-icon="check">Repairs</a></li>
 					<li><a href="#additem" data-icon="gear">Add Repair</a></li>
 				</ul>
 			</section>
@@ -335,7 +330,7 @@
 				<ul>
 					<li><a href="#home" data-icon="home">Home</a></li>
 					<li><a href="#about" data-icon="info">About</a></li>
-					<li><a href="#past" data-icon="check">Past Repairs</a></li>
+					<li><a href="#repairs" data-icon="check">Repairs</a></li>
 					<li><a href="#additem" data-icon="gear">Add Repair</a></li>
 				</ul>
 			</section>
@@ -388,7 +383,7 @@
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
 						<li><a href="#about" data-icon="info">About</a></li>
-						<li><a href="#past" data-icon="check">Past Repairs</a></li>
+						<li><a href="#repairs" data-icon="check">Repairs</a></li>
 						<li><a href="#additem" data-icon="gear">Add Repair</a></li>
 					</ul>
 				</section>
@@ -441,7 +436,7 @@
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
 						<li><a href="#about" data-icon="info">About</a></li>
-						<li><a href="#past" data-icon="check">Past Repairs</a></li>
+						<li><a href="#repairs" data-icon="check">Repairs</a></li>
 						<li><a href="#additem" data-icon="gear">Add Repair</a></li>
 					</ul>
 				</section>
