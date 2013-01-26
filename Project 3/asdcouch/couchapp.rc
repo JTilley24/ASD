@@ -2,6 +2,9 @@
   "env": {
     "local": {
       "db": "http://127.0.0.1:5984/asdproject"
+    },
+    "cloudant": {
+      "db": "https://astramedisonesseduringle:PvY4cHO2bGp2ysLDIhUpuvJm@jtilley24.cloudant.com/asdproject"
     }
   }
 }
