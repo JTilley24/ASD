@@ -22,6 +22,7 @@
 	
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
 	<script src="modernizr.custom.min.js"></script>
+	
 
 	
 </head>
@@ -95,6 +96,11 @@
 				<li class="ui-block-b"><a href="#" data-role="button" id="asiaButton">Asian Couch data</a></li>
 				<li class="ui-block-c"><a href="#" data-role="button" id="euroButton">European Couch data</a></li>
 			</ul>
+			<ul data-role="listview">
+				<li><a href="#domrepair" id="domLink">Domestic Repairs</a></li>
+				<li><a href="asia.html" id="asiaLink">Asian Repairs</a></li>
+				<li><a href="euro.html" id="euroLink">European Repairs</a></li>
+			</ul>
 		</section>
 		<section data-role="content">
 			<ul data-role="listview" id="datalist">
@@ -109,6 +115,19 @@
 					<li><a href="#additem" data-icon="gear">Add Repair</a></li>
 				</ul>
 			</section>
+		</footer>
+	</div>
+	
+	<div data-role="page" id="domrepair" data-add-back-btn="true">
+		<header data-role="header" data-position="fixed">
+			<h1><img src="brand.png" id="brand">Domestic Repairs<h1>
+		</header>
+		<section data-role="content">
+			<ul data-role="listview" id="domlist">
+			</ul>
+		</section>
+		<footer data-role="footer" data-position="fixed">
+			
 		</footer>
 	</div>
 	
@@ -450,6 +469,7 @@
 	<script src="jquery.validate.min.js"></script>
 	<script src="json.js" type="text/javascript"></script>
 	<script src="main.js" type="text/javascript"></script>
+	<script src="jquery.couch.js"></script>
 
 </body>
 </html>

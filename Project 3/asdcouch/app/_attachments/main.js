@@ -29,7 +29,10 @@ var saveData = function(data){
 		location.reload();
 };
 
-$("#repairs").on("pageinit", function(){
+$("#repairs").on("pageinit", function(){	
+	
+	
+	
 	$("#storage").on("click", function(){
 		$("#repairlist").empty();
 		for(var i=0, j=localStorage.length; i<j; i++){
@@ -59,6 +62,7 @@ $("#repairs").on("pageinit", function(){
 		}
 		
 	});
+
 	
 	//Clear Local Storage
 	$("#clear").on("click", function(){
@@ -127,8 +131,8 @@ var deleteRepair = function(key){
 
 
 
-//Load CouchDB data
-	
+
+//Load CouchDB data	
 var loadAData = function(){
 		$("#datalist").empty();
 		$.ajax({
@@ -276,6 +280,70 @@ $("#additem").on("pageinit", function(){
 
 
 });
+var urlVars = function(){
+	var urlData = $($.mobile.activePage).data("url")
+	var urlParts = urlData.split("?");
+	var urlPairs = urlParts[1].split("&");
+	var urlValues = {};
+	for (var pair in urlPairs){
+		var keyValue = urlPairs[pair].split("=");
+		var key = decodeURIComponent(keyValue[0]);
+		var value = decodeURIComponent(keyValue[1]);
+		urlValues[key] = value;
+	}
+	return urlValues;
+};
+
+$("#domrepair").live("pageshow", function(){
+	
+	//Dynamic Couch data
+	$.couch.db("asdproject").view("vehiclerepair/dom", {
+			success: function(data) {
+				$("#domlist").empty();
+				$.each(data.rows, function(index, value){
+					var item = (value.value || value.doc);
+					$("#domlist").append(
+						$("<li>").append(
+							$("<a>").attr("href", "dom.html?dom=" + item.model).text(item.year+" "+item.make+" "+item.model)
+						)
+					);
+				});
+				$("#domlist").listview("refresh");
+			}
+	});	
+	
+});
+
+$("#domdetails").live("pageshow", function(){
+	
+	var dominfo = urlVars()["dom"];
+	//console.log(dominfo);
+	var domitem;
+	$.couch.db("asdproject").view("vehiclerepair/dom", {
+			success: function(data) {
+				$("#domDlist").empty();
+				$.each(data.rows, function(index, value){
+					var item = (value.value || value.doc);
+					if(item.model === dominfo){
+						domitem = item;
+					};
+				});
+				$("#domDlist").append(
+					$("<li>").text(
+						"Region: "+domitem.region
+						+"Make: "+domitem.make
+						+"Model: "+domitem.model
+						+"Parts: "+domitem.parts
+						+"Year: "+domitem.year
+						+"Date: "+domitem.date
+						+"Comments: "+domitem.comments
+					)
+				)
+				$("#domDlist").listview("refresh");
+			}
+	});	
+});
+
 
 $("#engine").on("pageinit", function(){
 
