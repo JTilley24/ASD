@@ -98,8 +98,8 @@
 			</ul>
 			<ul data-role="listview">
 				<li><a href="#domrepair" id="domLink">Domestic Repairs</a></li>
-				<li><a href="asia.html" id="asiaLink">Asian Repairs</a></li>
-				<li><a href="euro.html" id="euroLink">European Repairs</a></li>
+				<li><a href="#asiarepair" id="asiaLink">Asian Repairs</a></li>
+				<li><a href="#eurorepair" id="euroLink">European Repairs</a></li>
 			</ul>
 		</section>
 		<section data-role="content">
@@ -117,7 +117,66 @@
 			</section>
 		</footer>
 	</div>
-	
+	<div data-role="page" id="newRepair" data-add-back-btn="true">
+		<header data-role="header" data-position="fixed">
+			<h1><img src="brand.png" id="brand">Edit Repair<h1>
+		</header>
+		<section data-role="content">
+			<form action="" method="post" id="newrepair">
+				<section data-role="fieldcontain">
+					<fieldset data-role="controlgroup" id="newregion">
+						<legend>Region:</legend>
+						<input type="radio" value="Domestic" name="newregion" id="newdomestic" checked="checked"/>
+						<label for="domestic" >Domestic<p>*American</p></label>
+						<input type="radio" value="European" name="newregion" id="neweuropean"/>
+						<label for="european">European<p>*British or German</p></label>
+						<input type="radio" value="Asian" name="newregion" id="newasian"/>
+						<label for="asian">Asian<p>*Japanese</p></label>
+					</fieldset>
+				</section>
+				<section data-role="fieldcontain">
+					<label for="newmake">Make: <span id="req">*<span></label>
+					<input type="text" name="make" id="newmake" class="required" placeholder="Example: Chevy,Honda,BMW"/>
+				</section>
+				<section data-role="fieldcontain">
+					<label for="newmodel">Model: <span id="req">*<span></label>
+					<input type="text" name="model" id="newmodel" class="required" placeholder="Example: Accord,Malibu,F-150"/>
+				</section>
+				<section data-role="fieldcontain">
+					<label for="parts">Parts Category:<label>
+					<select name="parts" id="newparts">
+						<option data-placeholder="true">---Choose Category---</option>
+						<option value="Engine">Engine</option>
+						<option value="Drivetrain">Drivetrain</option>
+						<option value="Chassis">Chassis</option>
+						<option value="Interior">Interior</option>
+						<option value="Body">Body</option>
+					</select>
+				</section>
+				<section data-role="fieldcontain">
+					<label for="year">Year:</label>
+					<input type="range" id="newyear" name="year" value="2000" min="1970" max="2013"/>
+				</section>
+				<section data-role="fieldcontain">
+					<label for="date">Expected date for repair:</label>
+					<input type="date" id="newdate"/>
+				</section>
+				<section data-role="fieldcontain">
+					<label for="comments">Description of repair:</label>
+					<textarea id="newcomments" class="required" placeholder="Example: Replace transmission, Tune-up"></textarea>
+				</section>
+				<section data-role="fieldcontain">
+					<input type="submit" id="formsubmit" value="Submit" data-theme="a">
+			
+				</section>
+				<section data-role="fieldcontain">
+					<input type="reset" id="formreset" value="Reset" data-theme="b">
+				</section>
+		</section>
+		<footer data-role="footer" data-position="fixed">
+			
+		</footer>
+	</div>
 	<div data-role="page" id="domrepair" data-add-back-btn="true">
 		<header data-role="header" data-position="fixed">
 			<h1><img src="brand.png" id="brand">Domestic Repairs<h1>
@@ -127,7 +186,45 @@
 			</ul>
 		</section>
 		<footer data-role="footer" data-position="fixed">
-			
+			<section data-role="navbar">
+				<ul>
+					<li><a href="#newRepair" data-icon="plus">Add Repair</a></li>
+				</ul>
+			</section>
+		</footer>
+	</div>
+	
+	<div data-role="page" id="eurorepair" data-add-back-btn="true">
+		<header data-role="header" data-position="fixed">
+			<h1><img src="brand.png" id="brand">European Repairs<h1>
+		</header>
+		<section data-role="content">
+			<ul data-role="listview" id="eurolist">
+			</ul>
+		</section>
+		<footer data-role="footer" data-position="fixed">
+			<section data-role="navbar">
+				<ul>
+					<li><a href="form.html" data-icon="plus">Add Repair</a></li>
+				</ul>
+			</section>
+		</footer>
+	</div>
+	
+	<div data-role="page" id="asiarepair" data-add-back-btn="true">
+		<header data-role="header" data-position="fixed">
+			<h1><img src="brand.png" id="brand">Asian Repairs<h1>
+		</header>
+		<section data-role="content">
+			<ul data-role="listview" id="asialist">
+			</ul>
+		</section>
+		<footer data-role="footer" data-position="fixed">
+			<section data-role="navbar">
+				<ul>
+					<li><a href="form.html" data-icon="plus">Add Repair</a></li>
+				</ul>
+			</section>
 		</footer>
 	</div>
 	

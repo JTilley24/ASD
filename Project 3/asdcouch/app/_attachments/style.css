@@ -66,6 +66,18 @@ label.error{
 
 }
 
+#editregion p{
+	display: inline;
+	margin-left: 10px;
+	font-size: 9px;
+	color: grey;
+
+}
+#edityear{
+	display: inline;
+	width: 20%;
+}
+
 #year{
 	display: inline;
 	width: 20%;

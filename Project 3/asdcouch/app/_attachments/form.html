@@ -1,0 +1,70 @@
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>Edit Repair</title>	
+</head>
+<body>
+	<div data-role="page" id="editRepair" data-add-back-btn="true">
+		<header data-role="header" data-position="fixed">
+			<h1><img src="brand.png" id="brand">Edit Repair<h1>
+		</header>
+		<section data-role="content">
+			<form action="" method="post" id="editrepair">
+				<section data-role="fieldcontain">
+					<fieldset data-role="controlgroup" id="editregion">
+						<legend>Region:</legend>
+						<input type="radio" value="Domestic" name="editregion" id="editdomestic" checked="checked"/>
+						<label for="domestic" >Domestic<p>*American</p></label>
+						<input type="radio" value="European" name="editregion" id="editeuropean"/>
+						<label for="european">European<p>*British or German</p></label>
+						<input type="radio" value="Asian" name="editregion" id="editasian"/>
+						<label for="asian">Asian<p>*Japanese</p></label>
+					</fieldset>
+				</section>
+				<section data-role="fieldcontain">
+					<label for="editmake">Make: <span id="req">*<span></label>
+					<input type="text" name="make" id="editmake" class="required" placeholder="Example: Chevy,Honda,BMW"/>
+				</section>
+				<section data-role="fieldcontain">
+					<label for="editmodel">Model: <span id="req">*<span></label>
+					<input type="text" name="model" id="editmodel" class="required" placeholder="Example: Accord,Malibu,F-150"/>
+				</section>
+				<section data-role="fieldcontain">
+					<label for="parts">Parts Category:<label>
+					<select name="parts" id="editparts">
+						<option data-placeholder="true">---Choose Category---</option>
+						<option value="Engine">Engine</option>
+						<option value="Drivetrain">Drivetrain</option>
+						<option value="Chassis">Chassis</option>
+						<option value="Interior">Interior</option>
+						<option value="Body">Body</option>
+					</select>
+				</section>
+				<section data-role="fieldcontain">
+					<label for="year">Year:</label>
+					<input type="range" id="edityear" name="year" value="2000" min="1970" max="2013"/>
+				</section>
+				<section data-role="fieldcontain">
+					<label for="date">Expected date for repair:</label>
+					<input type="date" id="editdate"/>
+				</section>
+				<section data-role="fieldcontain">
+					<label for="comments">Description of repair:</label>
+					<textarea id="editcomments" class="required" placeholder="Example: Replace transmission, Tune-up"></textarea>
+				</section>
+				<section data-role="fieldcontain">
+					<input type="submit" id="editsubmit" value="Submit" data-theme="a">
+			
+				</section>
+				<section data-role="fieldcontain">
+					<input type="reset" id="editreset" value="Reset" data-theme="b">
+				</section>
+		</section>
+		<footer data-role="footer" data-position="fixed">
+			
+		</footer>
+	</div>
+</body>
+</html>
